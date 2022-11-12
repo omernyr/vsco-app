@@ -48,7 +48,6 @@ const Navbar = () => {
     padding: 24px 40px;
     display: flex;
     align-items: center;
-    background: #ddd;
     justify-content: space-between;
   `
 

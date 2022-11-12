@@ -9,6 +9,7 @@ const Container = () => {
         align-items: center;
         justify-content: center;
         max-width: 100%;
+        height: 45vh;
     `
 
     return (
