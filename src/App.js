@@ -5,21 +5,6 @@ import Footer from './components/Footer';
 
 function App() {
 
-  const Button = styled.button`
-  background: transparent;
-  border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
-  margin: 0 1em;
-  padding: 0.25em 1em;
-  cursor: pointer;
-  transition: 0.4s;
-  &:hover {
-    border: 2px solid green;
-    width: 10%;
-    height: 10%;
-  }
-  `
   const Div = styled.div`
     top:0;
     left:0;
@@ -30,12 +15,10 @@ function App() {
     width:100%;
     height: 100vh;
   `
-
   return (
     <Div>
       <Navbar />
       <Container />
-      <Button>Click</Button>
       <Footer />
     </Div>
   );

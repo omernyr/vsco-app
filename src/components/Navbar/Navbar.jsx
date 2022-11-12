@@ -9,8 +9,9 @@ const Navbar = () => {
     width: fit-content;
     display: flex;
     align-items: center;
-    gap: 0 20px;
+    gap: 0 35px;
     font-size: 17px;
+    font-weight: 400;
   `
   const Button = styled.button`
     outline: none;
@@ -20,6 +21,7 @@ const Navbar = () => {
     border-radius: 2px;
     padding: 10px 20px;
     font-size: 15px;
+    font-weight: 600;
     text-align: center;
   `
   const RightDiv = styled.div`
@@ -28,20 +30,22 @@ const Navbar = () => {
     align-items: center;
     
     span { svg {
-      width: 32px;
-      height: 33px; 
+      width: 29px;
+      height: 30px;
+      margin:0 10px;
+      color: #737373;
+      font-weight: 400;
     }
     }
   `
   const Image = styled.img`
-    width:67px;
-    height: 38px;
+    width:83px;
     fill: none;
   `
   const Header = styled.header`
     max-width:100%;
-    height: 86px;
-    padding: 12px 20px;
+    height: 38px;
+    padding: 24px 40px;
     display: flex;
     align-items: center;
     background: #ddd;
@@ -56,7 +60,6 @@ const Navbar = () => {
         <span>Sign In</span>
         <Button>Download VSCO</Button>
       </LeftDiv>
-
       <RightDiv>
         <span><AiOutlineSearch /></span>
         <span><HiOutlineMenuAlt4 /></span>
