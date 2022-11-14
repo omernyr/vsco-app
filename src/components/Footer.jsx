@@ -7,6 +7,8 @@ const Footer = () => {
     padding: 60px 32px;
     background-color: #f0f0f1;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
     `
     const LeftBar = styled.div`
     display: flex;
@@ -43,13 +45,27 @@ const Footer = () => {
     grid-column-gap: 64px;
     grid-row-gap: 50px;
     max-width: 720px;
-    padding-left: 0;
-    list-style-type: none;
     
+    list-style-type: none;
     & > ul {
         list-style-type: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        & > li {
+            margin: 0 2.3em;
+            :nth-child(3) {
+                width:100px;
+              }    
+            span {
+                color: #737373;
+            }
+            li {
+                margin: 1.5em auto;
+                font-size: 13px;
+                color: #737373;
+            }
+        }
     }
     `
     return (
