@@ -5,7 +5,7 @@ const Footer = () => {
     const Footer = styled.div`
     height: 157px;
     padding: 60px 32px;
-    background-color: #f0f0f1;
+    background-color: #f6f6f6;
     bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ const Footer = () => {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         
         & > li {
-            margin: 0 2.3em;
+            margin: 0 2em;
             :nth-child(3) {
                 width:100px;
               }    
@@ -64,6 +64,10 @@ const Footer = () => {
                 margin: 1.5em auto;
                 font-size: 13px;
                 color: #737373;
+                cursor: pointer;
+                &:hover {
+                    color: #000;
+                }
             }
         }
     }

@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import Navbar from './components/Navbar/Navbar';
 import Container from './components/Container';
 import Footer from './components/Footer';
+import Lalo from "./lalo";
+import { MainProvider } from "./context/MainContext";
 
 function App() {
 
@@ -9,15 +11,16 @@ function App() {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
   `
+
+
   return (
-    <Div>
+    <MainProvider>
+      <Lalo />
       <Navbar />
       <Container />
       <Footer />
-    </Div>
+    </MainProvider>
   );
 }
-
 export default App;

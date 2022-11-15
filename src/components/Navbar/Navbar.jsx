@@ -12,6 +12,10 @@ const Navbar = () => {
     gap: 0 35px;
     font-size: 17px;
     font-weight: 400;
+    a {
+      color: #737373;
+      text-decoration:none;
+    }
   `
   const Button = styled.button`
     outline: none;
@@ -23,6 +27,7 @@ const Navbar = () => {
     font-size: 15px;
     font-weight: 600;
     text-align: center;
+    cursor: pointer;
   `
   const RightDiv = styled.div`
 
@@ -41,6 +46,7 @@ const Navbar = () => {
   const Image = styled.img`
     width:83px;
     fill: none;
+    cursor: pointer;    
   `
   const Header = styled.header`
     max-width:100%;
@@ -55,8 +61,8 @@ const Navbar = () => {
     <Header>
       <LeftDiv>
         <Image src="https://1000logos.net/wp-content/uploads/2022/09/VSCO-Symbol.png" alt="logo" />
-        <span>Stories</span>
-        <span>Sign In</span>
+        <a href='#'>Stories</a>
+        <a href='#'>Sign In</a>
         <Button>Download VSCO</Button>
       </LeftDiv>
       <RightDiv>

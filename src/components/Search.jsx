@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { usePhoto } from "../context/MainContext";
 
 const Search = () => {
 
@@ -26,12 +28,31 @@ const Search = () => {
             cursor: pointer;
             border: none;
             background: transparent;
+            &:hover {
+                color: #000;
+            }
         }
     `
-    return (
 
+    const [user, setUser] = useState(null);
+
+    // const handleSubmit = () => {
+
+    //     const MY_API_KEY = 'H0YlBtF4AuBfe-kLYV_2o0ZdYfJySCvaX9F-b6UpMvs';
+    //     fetch(`https://api.unsplash.com/users/${user}/photos/?client_id=${MY_API_KEY}`)
+    //         .then(resp => resp.json())
+    //         .then(resp => console.log(resp))
+
+    // }
+
+    useEffect(() => {
+        console.log(user);
+    }, [user])
+
+    return (
         <Search>
-            <Input type="text" placeholder="Search" />
+            <Input type="text" placeholder="Search" value={user} onChange={(e) => setUser(e.target.value)} />
+            {/* <button onClick={handleSubmit}>Click</button>  */}
             <SearchFooter>
                 <button>People</button>
                 <button>Images</button>
