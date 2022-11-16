@@ -29,5 +29,4 @@ const Photo = () => {
         </Photos>
     )
 }
-
 export default Photo

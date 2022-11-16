@@ -5,7 +5,6 @@ const SearchBar = styled.div`
 margin-top: 2em;
 width: 560px;
 height: 75px;
-position: sticky;
 `
 const Input = styled.input`
 width: 100%;
@@ -45,9 +44,13 @@ const Search = () => {
         e.preventDefault();
         fetch(`https://api.unsplash.com/users/${user}/photos/?client_id=${MY_API_KEY}`)
             .then(resp => resp.json())
-            .then(resp => setPhotos(resp))
+            .then(resp => {
+                setPhotos(resp)
+            })
+            
     }
     
+
     return (
         <SearchBar>
             <form onSubmit={handleSubmit}>
