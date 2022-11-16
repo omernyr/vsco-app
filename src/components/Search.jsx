@@ -47,7 +47,7 @@ const Search = () => {
             .then(resp => resp.json())
             .then(resp => setPhotos(resp))
     }
-
+    
     return (
         <SearchBar>
             <form onSubmit={handleSubmit}>

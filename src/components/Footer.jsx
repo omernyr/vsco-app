@@ -36,7 +36,6 @@ justify-content: center;
     color: #737373;
 }
 `
-
 const RightBar = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -70,7 +69,6 @@ list-style-type: none;
     }
 }
 `
-
 const Footer = () => {
 
     return (
