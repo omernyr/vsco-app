@@ -7,6 +7,7 @@ export const MainProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [urls, setUrls] = useState([]);
     const [photos, setPhotos] = useState([]);
+    const MY_API_KEY = 'H0YlBtF4AuBfe-kLYV_2o0ZdYfJySCvaX9F-b6UpMvs';
 
     const values = {
         user,
@@ -14,7 +15,8 @@ export const MainProvider = ({ children }) => {
         urls,
         setUrls,
         photos,
-        setPhotos
+        setPhotos,
+        MY_API_KEY
     }
 
     return <MainContext.Provider value={values}> {children} </MainContext.Provider>

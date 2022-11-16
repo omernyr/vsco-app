@@ -31,26 +31,18 @@ button {
     }
 }
 `
-
 const Search = () => {
 
-    const { user, setUser, setPhotos } = usePhoto();
-
-
-    const MY_API_KEY = 'H0YlBtF4AuBfe-kLYV_2o0ZdYfJySCvaX9F-b6UpMvs';
-
+    const { user, setUser, setPhotos, MY_API_KEY } = usePhoto();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         fetch(`https://api.unsplash.com/users/${user}/photos/?client_id=${MY_API_KEY}`)
             .then(resp => resp.json())
             .then(resp => {
-                setPhotos(resp)
+                resp.length && setPhotos(resp);
             })
-            
     }
-    
-
     return (
         <SearchBar>
             <form onSubmit={handleSubmit}>
@@ -64,5 +56,4 @@ const Search = () => {
         </SearchBar>
     )
 }
-
 export default Search

@@ -14,18 +14,18 @@ overflow: scroll;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 flex-wrap: wrap;
+max-width: 100%;
 `
-
 const Photo = () => {
 
     const { photos } = usePhoto();
-
     return (
         <Photos>
-            {photos.map((photo, id) => (
-                <Image key={id} src={`${photo.urls.small}`} alt="" />
-            )
-            )}
+            {
+                photos.map((photo, id) => (
+                    <Image key={id} src={`${photo.urls.small}`} alt="" />
+                )
+                )}
         </Photos>
     )
 }
