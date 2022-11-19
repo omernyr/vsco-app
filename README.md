@@ -4,7 +4,7 @@ In this project, I made a clone of the popular photo application vsco.
 
 ## Live Link of the Project
 
-[VSCO-CLONE](gşdflgöfdşlgödf)
+[VSCO-CLONE](https://vsco-app-clone.netlify.app/)
 
 Tools 🛠️
 
