@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { AiOutlineSearch } from "react-icons/ai";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { usePhoto } from "../../context/MainContext"
+import { usePhoto } from "../context/MainContext"
 
 const LeftDiv = styled.div`
   height: 50px;

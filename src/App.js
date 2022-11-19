@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar';
 import Container from './components/Container';
 import Footer from './components/Footer';
 import { MainProvider } from "./context/MainContext";
