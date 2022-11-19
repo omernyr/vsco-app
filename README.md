@@ -20,4 +20,4 @@ Tools 🛠️
 
 ## Demo 
 
-![Demo]()
+(![Demo](src/clip.gif))
