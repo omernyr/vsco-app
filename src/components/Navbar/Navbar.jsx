@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { AiOutlineSearch } from "react-icons/ai";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { usePhoto } from "../../context/MainContext"
 
 const LeftDiv = styled.div`
   height: 50px;
@@ -64,6 +65,8 @@ const Header = styled.header`
 `
 const Navbar = () => {
 
+  const { setMenuToggle } = usePhoto();
+
   return (
     <Header>
       <LeftDiv>
@@ -74,7 +77,7 @@ const Navbar = () => {
       </LeftDiv>
       <RightDiv>
         <span><AiOutlineSearch /></span>
-        <span><HiOutlineMenuAlt4 /></span>
+        <span onClick={() => setMenuToggle(false)}><HiOutlineMenuAlt4 /></span>
       </RightDiv>
     </Header>
   )

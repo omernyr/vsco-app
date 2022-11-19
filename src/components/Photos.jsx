@@ -18,14 +18,15 @@ max-width: 100%;
 `
 const Photo = () => {
 
-    const { photos } = usePhoto();
+    const { photos, findUser } = usePhoto();
     return (
         <Photos>
             {
                 photos.map((photo, id) => (
                     <Image key={id} src={`${photo.urls.small}`} alt="" />
                 )
-                )}
+                )
+            }
         </Photos>
     )
 }

@@ -9,6 +9,7 @@ const ContainerBar = styled.div`
     justify-content: center;
     max-width: 100%;
     flex-direction: column;
+    
 `
 
 const Container = () => {
