@@ -7,7 +7,7 @@ export const MainProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [urls, setUrls] = useState([]);
     const [photos, setPhotos] = useState([]);
-    const [menuToggle, setMenuToggle] = useState(false);
+    const [menuToggle, setMenuToggle] = useState(true);
     const MY_API_KEY = 'H0YlBtF4AuBfe-kLYV_2o0ZdYfJySCvaX9F-b6UpMvs';
 
     const values = {
